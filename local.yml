@@ -1,0 +1,10 @@
+---
+# This playbook provisions and configures the localhost with ansible-pull.
+
+- hosts: localhost
+  become: true
+  pre-tasks:
+    - name: Update package cache (debian, etc)
+      when: ansible_facts['os_family'] == "Debian"
+      ansible.builtin.apt:
+        update_cache: true
