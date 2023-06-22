@@ -7,5 +7,6 @@
   when: packages_to_install is not defined
 
 - name: Install packages
-  ansible.builtin.package: "{{ packages_to_install }}"
-  state: present
+  ansible.builtin.package: 
+    - name: "{{ packages_to_install }}"
+      state: present
