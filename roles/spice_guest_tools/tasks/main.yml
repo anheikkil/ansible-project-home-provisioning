@@ -8,5 +8,5 @@
 
 - name: Install packages
   ansible.builtin.package: 
-    - name: "{{ packages_to_install }}"
-      state: present
+    name: "{{ packages_to_install }}"
+    state: present
