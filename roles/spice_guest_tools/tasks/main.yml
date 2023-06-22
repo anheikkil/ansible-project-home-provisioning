@@ -1,0 +1,11 @@
+---
+# This playbook deploys qemu-guest-agent and spice packages.
+
+- name: Ensure variable is defined
+  fail:
+    msg: "Variable is not defined"
+  when: packages_to_install is not defined
+
+- name: Install packages
+  ansible.builtin.package: "{{ packages_to_install }}"
+  state: present
