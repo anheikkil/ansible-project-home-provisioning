@@ -3,7 +3,7 @@
 
 - hosts: localhost
   become: true
-  pre-tasks:
+  pre_tasks:
     - name: Update package cache (debian, etc)
       when: ansible_facts['os_family'] == "Debian"
       ansible.builtin.apt:
