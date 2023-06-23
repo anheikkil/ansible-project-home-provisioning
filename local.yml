@@ -1,6 +1,5 @@
 ---
 # This playbook provisions and configures the localhost with ansible-pull.
-
 - hosts: localhost
   become: true
   pre_tasks:

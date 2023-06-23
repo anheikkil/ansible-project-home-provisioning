@@ -1,9 +1,8 @@
 ---
 # This playbook deploys qemu-guest-agent and spice packages.
-
-- name: Ensure variable is defined
+- name: Ensure packages variable is defined
   fail:
-    msg: "Variable is not defined"
+    msg: "Packages variable is not defined"
   when: packages_to_install is not defined
 
 - name: Install packages

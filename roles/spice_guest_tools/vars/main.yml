@@ -1,6 +1,5 @@
 ---
 # Define variables for spice_guest_tools
-
 packages_to_install:
   - qemu-guest-agent
   - spice-vdagent
