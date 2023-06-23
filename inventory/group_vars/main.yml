@@ -1,5 +1,0 @@
----
-# Define variables for all groups
-users:
-  - name: "antti"
-    gtk_prefer_dark_theme: false
