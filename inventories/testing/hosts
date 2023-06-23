@@ -1,0 +1,4 @@
+localhost           ansible_connection=local
+
+[spice_guest_tools]
+vm-gnome
